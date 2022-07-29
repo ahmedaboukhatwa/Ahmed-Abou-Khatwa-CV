@@ -1,5 +1,3 @@
-import Head from 'next/head';
-import Image from 'next/image';
 import styles from '../../styles/intro/intro.module.scss';
 import TitleName from '../intro/titleName';
 import Details from './details';

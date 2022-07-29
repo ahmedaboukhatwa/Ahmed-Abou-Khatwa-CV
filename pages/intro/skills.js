@@ -1,6 +1,4 @@
 import React from "react";
-import Head from "next/head";
-import Image from "next/image";
 import { Fragment } from "react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import { faCaretRight  } from "@fortawesome/free-solid-svg-icons";
