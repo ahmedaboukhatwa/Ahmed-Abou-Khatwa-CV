@@ -1,0 +1,24 @@
+$Blue: #63a2c2;
+$DarkBlue: #1b262c;
+$DarkGrey: #c9c5c4;
+$LightGrey: #f5f1f0;
+.container {
+  padding: 0 2rem;
+}
+
+.main {
+  min-height: 100vh;
+  padding: 4rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro{
+  position: fixed;
+  width: 22%;
+  height: 100%;
+  background-color: $DarkBlue;
+}

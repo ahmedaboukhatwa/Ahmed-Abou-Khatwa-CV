@@ -1,0 +1,62 @@
+$Blue: #63a2c2;
+$DarkBlue: #1b262c;
+$DarkGrey: #c9c5c4;
+$LightGrey: #f5f1f0;
+.skills_title {
+    color: $Blue;
+    margin: 0 0 0 25px;
+  }
+.ul_skills_lists {
+    color: $LightGrey; 
+    margin-top: 0;
+    .skill {
+      overflow: hidden;
+      margin: 1px;
+      cursor: pointer;
+      width: 210px;
+      .span_skill_header{ 
+        .icon{
+          color: $Blue;
+        }
+        h3 {
+          display: inline-block;
+          margin: 3px 10px;
+        }
+      }
+      ul{
+        transition: .5s ease-in-out;
+        list-style: none;  
+        height: 0;
+        overflow: hidden;
+      }
+    }
+    .skill_active {
+      &:first-of-type{
+        ul{
+          transition: .5s ease-in-out;
+          display: block;
+          height: 30px;
+          li{
+          
+          }
+        }
+      }
+      .span_skill_header{ 
+        display: inline !important;
+        .icon{    
+          transform: rotate(90deg);
+        }
+        
+        h3 {
+          
+          display: inline-block;
+        }
+      }
+      ul{
+          display: block;
+          height: 85px;
+          width: 250px !important;
+      }
+    }
+  
+}

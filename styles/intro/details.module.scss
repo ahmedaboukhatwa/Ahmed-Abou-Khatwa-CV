@@ -1,0 +1,123 @@
+$Blue: #63a2c2;
+$DarkBlue: #1b262c;
+$DarkGrey: #c9c5c4;
+$LightGrey: #f5f1f0;
+.caret_icon{
+  color: $Blue;
+  font-weight: bold;
+  font-size: 25px;
+  margin-left: 120px;
+}
+
+.details {
+    margin: 0;
+    padding: 0;
+    .about{
+      transition:all 1s ease-in-out;
+
+    cursor: pointer;
+      h2 {
+        color: $Blue;
+        margin-left: 23px;
+      }
+      
+      p{
+        height: 495px;
+        color: $LightGrey;
+        margin: 0;
+        padding: 0 23px;
+        font-size: 14.5px;
+        overflow: hidden;
+        transition:all 1s ease-in-out;
+        & + .fa-caret-right{
+          transform: rotate(-90deg);
+          color: $Blue;
+          margin-left: 100px;
+          font-size: 35px;
+        }
+      }
+      .hidden_paragraph{
+        margin: 0;
+        height: 65px;
+        transition:all 1s ease-in-out;
+        & + .caret_icon{
+          transform: rotate(180deg);
+        }
+      } 
+      .media {
+        padding: 0px;
+        list-style: none;
+        display: flex;
+        width: 210px;
+        margin:0 24px;
+        justify-content: start;
+        border-bottom: 1px solid $Blue;
+        li {
+          margin: 2px;
+        }
+        .linkedin {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: black;
+          height: 40px;
+          width: 50px;
+          border-radius: 50%;
+          .icon {
+            color: $LightGrey;
+            font-size: 25px;
+          }
+        }
+        .github {
+        
+          .icon {
+            color: black;
+            box-shadow: black inset -1px 1px 0px 2px;
+            background-color: #f5f1f0;
+            font-size: 39px;
+            border-radius: 50%;
+          }
+        }
+        .codepen {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: black;
+          height: 40px;
+          width: 50px;
+          border-radius: 50%;
+          .icon {
+            font-size: 26px;
+            color: $LightGrey;
+          }
+        }
+        .upwork {
+          width: 50px;
+          svg {
+            border-radius: 50%;
+          }
+        }
+        .cv{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: black;
+          color: $LightGrey;
+          height: 40px;
+          width: 50px;
+          border-radius: 50%;
+          //font-weight: bold;
+          font-size: 20px;
+        }
+      }
+    }
+    
+    h2{
+      color: $Blue;
+      margin-left: 23px;
+    }  
+  }
+  .active_details {
+    display: block;
+    transition: .5s ease-in-out;
+  }

@@ -1,0 +1,51 @@
+$Blue: #63a2c2;
+$DarkBlue: #1b262c;
+$DarkGrey: #c9c5c4;
+$LightGrey: #f5f1f0;
+header {
+    .title {
+      margin: 25px auto 5px;
+      height: 50px;
+      position: relative;
+      border: 2px solid $Blue;
+      .front,
+      .back {
+        position: absolute;
+        left: 50%;
+        margin-left: -100px;
+        top: 50%;
+        margin-top: -30px;
+        backface-visibility: hidden;
+        transform-style: preserve-3d;
+        transition: all 1s ease-in-out;
+        h2 {
+          font-size: 20px;
+        }
+      }
+      .front {
+        color: $LightGrey;
+      }
+      .back {
+        color: $Blue;
+        transform: rotatey(180deg);
+      }
+      &:hover {
+        .front {
+          transform: rotatey(180deg);
+        }
+        .back {
+          transform: rotatey(360deg);
+        }
+      }
+    }
+    .control {
+      display: none;
+      cursor: pointer;
+      width: 47px;
+      height: 45px;
+      svg {
+        fill: $Blue;
+      }
+    }
+  }
+
