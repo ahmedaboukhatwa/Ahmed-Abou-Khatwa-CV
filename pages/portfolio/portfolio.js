@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import countries_image from "../../images/am-furniture.png";
+import countries_image from "../../images/rest countries api.jpg";
 import ertugrul_image from "../../images/ertugrul.jpg";
 import furniture_image from "../../images/am-furniture.png";
 import quran_image from "../../images/quran Sound player.png";
