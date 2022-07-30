@@ -3,6 +3,7 @@ import React, { Fragment } from "react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedinIn , faGithub , faCodepen } from "@fortawesome/free-brands-svg-icons";
+//import cv_pdf from "../../files/Ahmed Abou Katwa CV.pdf";
 import styles from "../../styles/intro/details.module.scss";
 
 export default function Details() {
@@ -51,8 +52,7 @@ export default function Details() {
               <a  target="_blank">
                 <FontAwesomeIcon className={styles.icon} icon={faGithub}/>
               </a>
-              </Link>
-             
+              </Link>    
             </li>
             <li className={styles.codepen}>
               <Link href="https://codepen.io/a_mohammed2001" >
@@ -76,7 +76,7 @@ export default function Details() {
             
             </li>
             <li className={styles.cv}>
-              <Link href="../../files/Ahmed Abou Katwa CV.pdf">
+              <Link href="https://drive.google.com/file/d/17K1ZL08pCUrRTJjlit9-nqm898BZ1Mv3/view">
               <a  target="_blank">
                 CV
               </a>
