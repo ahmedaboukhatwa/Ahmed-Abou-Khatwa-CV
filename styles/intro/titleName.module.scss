@@ -2,12 +2,13 @@ $Blue: #63a2c2;
 $DarkBlue: #1b262c;
 $DarkGrey: #c9c5c4;
 $LightGrey: #f5f1f0;
-header {
+.header {
     .title {
       margin: 25px auto 5px;
       height: 50px;
       position: relative;
       border: 2px solid $Blue;
+      
       .front,
       .back {
         position: absolute;
@@ -38,14 +39,178 @@ header {
         }
       }
     }
-    .control {
-      display: none;
-      cursor: pointer;
-      width: 47px;
-      height: 45px;
-      .icon {
-        fill: $Blue;
+    
+  }
+  @media (max-width: 1200px) and (min-width: 993px) {
+    .header{
+      .title {
+        margin: 25px auto 20px;
+        height: 50px;
+        width: 100%;
+        position: relative;
+        border: 2px solid $Blue;
+        .front,
+        .back {
+          position: absolute;
+          text-align: center;
+          left: 50%;
+          margin-left: -95px;
+          top: 50%;
+          margin-top: -30px;
+          backface-visibility: hidden;
+          transform-style: preserve-3d;
+          transition: all 1s ease-in-out;
+          h2 {
+            font-size: 20px;
+          }
+        }
+        .front {
+          color: $LightGrey;
+        }
+        .back {
+          color: $Blue;
+          transform: rotatey(180deg);
+        }
+        &:hover {
+          .front {
+            transform: rotatey(180deg);
+          }
+          .back {
+            transform: rotatey(360deg);
+          }
+        }
       }
     }
   }
+  @media (max-width: 992px) and (min-width: 769px) {
+      .header {
+        display: flex;
+        .title {
+          margin: 11px 95px;
+          width: 60%;
+          .front,
+          .back {
+            position: absolute;
+            text-align: center;
+            left: 50%;
+            margin-left: -92px;
+            top: 50%;
+            margin-top: -30px;
+            backface-visibility: hidden;
+            transform-style: preserve-3d;
+            transition: all 1s ease-in-out;
+            h2 {
+              font-size: 20px;
+            }
+          }
+          .front {
+            color: $LightGrey;
+          }
+          .back {
+            color: $Blue;
+            transform: rotatey(180deg);
+          }
+          &:hover {
+            .front {
+              transform: rotatey(180deg);
+            }
+            .back {
+              transform: rotatey(360deg);
+            }
+          }
+        }
+        
+      }
+  }
+  @media (max-width: 768px) and (min-width: 701px) {
+      .header {
+        display: flex;
+        .title {
+          margin: 11px 6px;
+          width: 70%;
+          .front,
+          .back {
+            position: absolute;
+            text-align: center;
+            left: 50%;
+            margin-left: -100px;
+            top: 50%;
+            margin-top: -30px;
+            backface-visibility: hidden;
+            transform-style: preserve-3d;
+            transition: all 1s ease-in-out;
+            h2 {
+              font-size: 20px;
+            }
+          }
+          .front {
+            color: $LightGrey;
+          }
+          .back {
+            color: $Blue;
+            transform: rotatey(180deg);
+          }
+          &:hover {
+            .front {
+              transform: rotatey(180deg);
+            }
+            .back {
+              transform: rotatey(360deg);
+            }
+          }
+        }
+        .control {
+          position: absolute;
+          display: block;
+          right: 80px;
+          top: 13px;
+        }
+      }
+  }
+  @media (max-width: 700px) {
+      .header {
+        display: flex;
+        .title {
+          margin: 11px 6px;
+          width: 70%;
+          .front,
+          .back {
+            position: absolute;
+            text-align: center;
+            left: 50%;
+            margin-left: -100px;
+            top: 50%;
+            margin-top: -30px;
+            backface-visibility: hidden;
+            transform-style: preserve-3d;
+            transition: all 1s ease-in-out;
+            h2 {
+              font-size: 20px;
+            }
+          }
+          .front {
+            color: $LightGrey;
+          }
+          .back {
+            color: $Blue;
+            transform: rotatey(180deg);
+          }
+          &:hover {
+            .front {
+              transform: rotatey(180deg);
+            }
+            .back {
+              transform: rotatey(360deg);
+            }
+          }
+        }
+        .control {
+          position: absolute;
+          display: block;
+          right: 80px;
+          top: 13px;
+        }
+      }
+  }
+
 

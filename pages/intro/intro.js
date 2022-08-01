@@ -1,15 +1,13 @@
 import styles from '../../styles/intro/intro.module.scss';
 import TitleName from '../intro/titleName';
+import Controls from './controls';
 import Details from './details';
-import Languages from './languages';
-import Skills from './skills';
 export default function Intro() {
     return (
     <div className={styles.intro}>
+        <Controls/>
         <TitleName/>
         <Details/>
-        <Skills/>
-        <Languages/>
     </div>
     )
 }

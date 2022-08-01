@@ -1,0 +1,42 @@
+$Blue: #63a2c2;
+$DarkBlue: #1b262c;
+$DarkGrey: #c9c5c4;
+$LightGrey: #f5f1f0;
+.control {
+    display: none;
+    color:$Blue;
+}
+
+@media (max-width: 992px) and (min-width: 769px) {
+.control {
+    position: absolute;
+    display: block;
+    cursor: pointer;
+    font-size: 30px;
+    color:$Blue;
+    top: 15px;
+    right: 70px;
+}
+}
+@media (max-width: 768px) and (min-width: 701px) {
+.control {
+    position: absolute;
+    display: block;
+    cursor: pointer;
+    font-size: 30px;
+    color:$Blue;
+    top: 15px;
+    right: 70px;
+}
+}
+@media (max-width: 700px) {
+    .control {
+      position: absolute;
+      display: block;
+      cursor: pointer;
+      font-size: 30px;
+      color:$Blue;
+      top: 15px;
+      right: 85px;
+    }
+}

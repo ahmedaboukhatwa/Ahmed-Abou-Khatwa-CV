@@ -1,0 +1,497 @@
+$Blue: #63a2c2;
+$DarkBlue: #1b262c;
+$DarkGrey: #c9c5c4;
+$LightGrey: #f5f1f0;
+
+.about {
+    margin: 0;
+    padding: 0; 
+    .about_paragraph{
+      transition:all 1s ease-in-out;
+      cursor: pointer;
+      h2 {
+        color: $Blue;
+        margin-left: 23px;
+      }
+      
+      p{
+        height: 495px;
+        color: $LightGrey;
+        margin: 0;
+        padding: 0 23px;
+        font-size: 14.5px;
+        overflow: hidden;
+        transition:all 1s ease-in-out;
+        & + .fa-caret-right{
+          transform: rotate(-90deg);
+          color: $Blue;
+          margin-left: 100px;
+          font-size: 35px;
+        }
+      }
+      .hidden_paragraph{
+        margin: 0;
+        height: 65px;
+        transition:all 1s ease-in-out;
+        & + .caret_icon{
+          transform: rotate(180deg);
+        }
+      } 
+      .caret_icon{
+        color: $Blue;
+        font-weight: bold;
+        font-size: 25px;
+        margin-left: 120px;
+      }
+    }
+    .media {
+      padding: 0px;
+      list-style: none;
+      display: flex;
+      width: 210px;
+      margin:0 24px;
+      justify-content: start;
+      border-bottom: 1px solid $Blue;
+      li {
+        margin: 2px;
+      }
+      .linkedin {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        height: 40px;
+        width: 50px;
+        border-radius: 50%;
+        .icon {
+          color: $LightGrey;
+          font-size: 25px;
+        }
+      }
+      .github {
+      
+        .icon {
+          color: black;
+          box-shadow: black inset -1px 1px 0px 2px;
+          background-color: #f5f1f0;
+          font-size: 39px;
+          border-radius: 50%;
+        }
+      }
+      .codepen {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        height: 40px;
+        width: 50px;
+        border-radius: 50%;
+        .icon {
+          font-size: 26px;
+          color: $LightGrey;
+        }
+      }
+      .upwork {
+        width: 50px;
+        svg {
+          border-radius: 50%;
+        }
+      }
+      .cv{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        color: $LightGrey;
+        height: 40px;
+        width: 50px;
+        border-radius: 50%;
+        //font-weight: bold;
+        font-size: 20px;
+      }
+    }
+    h2{
+      color: $Blue;
+      margin-left: 23px;
+    }  
+  }
+  @media (max-width: 1200px) and (min-width: 993px) {
+    .about {
+      margin: 0;
+      padding: 0; 
+      .about_paragraph{
+        transition:all 1s ease-in-out;
+        cursor: pointer;
+        h2 {
+          color: $Blue;
+          margin-left: 23px;
+        }
+        
+        p{
+          height: 495px;
+          color: $LightGrey;
+          margin: 0;
+          padding: 0 23px;
+          font-size: 14.5px;
+          overflow: hidden;
+          transition:all 1s ease-in-out;
+          & + .fa-caret-right{
+            transform: rotate(-90deg);
+            color: $Blue;
+            margin-left: 100px;
+            font-size: 35px;
+          }
+        }
+        .hidden_paragraph{
+          margin: 0;
+          height: 65px;
+          transition:all 1s ease-in-out;
+          & + .caret_icon{
+            transform: rotate(180deg);
+          }
+        } 
+        
+      }
+      .media {
+        padding: 0px;
+        list-style: none;
+        display: flex;
+        width: 210px;
+        margin:0 24px;
+        justify-content: start;
+        border-bottom: 1px solid $Blue;
+        li {
+          margin: 2px;
+        }
+        .linkedin {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: black;
+          height: 40px;
+          width: 50px;
+          border-radius: 50%;
+          .icon {
+            color: $LightGrey;
+            font-size: 25px;
+          }
+        }
+        .github {
+        
+          .icon {
+            color: black;
+            box-shadow: black inset -1px 1px 0px 2px;
+            background-color: #f5f1f0;
+            font-size: 39px;
+            border-radius: 50%;
+          }
+        }
+        .codepen {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: black;
+          height: 40px;
+          width: 50px;
+          border-radius: 50%;
+          .icon {
+            font-size: 26px;
+            color: $LightGrey;
+          }
+        }
+        .upwork {
+          width: 50px;
+          svg {
+            border-radius: 50%;
+          }
+        }
+        .cv{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: black;
+          color: $LightGrey;
+          height: 40px;
+          width: 50px;
+          border-radius: 50%;
+          //font-weight: bold;
+          font-size: 20px;
+        }
+      }
+      h2{
+        color: $Blue;
+        margin-left: 23px;
+      }  
+    }
+  }
+  @media (max-width: 992px) and (min-width: 769px) {
+    .about {
+      margin: 0;
+      padding: 0; 
+      .about_paragraph{
+        transition:all 1s ease-in-out;
+        cursor: pointer;
+        h2 {
+          color: $Blue;
+          margin-left: 23px;
+        }
+        
+        p{
+          height: 495px !important;
+          color: $LightGrey;
+          margin: 0;
+          padding: 0 23px;
+          font-size: 14.5px;
+          overflow: hidden;
+          transition:all 1s ease-in-out;
+        }
+        .hidden_paragraph{
+          margin: 0;
+          height: 60px !important;
+          transition:all 1s ease-in-out;
+          & + .caret_icon{
+            transform: rotate(180deg);
+          }
+        } 
+        .caret_icon{
+          color: $Blue;
+          font-weight: bold;
+          font-size: 25px;
+          margin-left: 120px;
+        }
+      }
+      .caret_icon{
+        margin-left: 100px !important;
+      }
+      .media {
+        width: 170px; 
+        .linkedin {
+        
+          height: 30px;
+          width: 40px;
+          .icon {
+            color: $LightGrey;
+            font-size: 20px;
+          }
+        }
+        .github {
+          .icon {
+            font-size: 30px;
+            border-radius: 50%;
+          }
+        }
+        .codepen {
+          height: 30px;
+          width: 40px;
+          .icon {
+            font-size: 20px;
+          }
+        }
+        .upwork {
+          width: 40px;
+          svg {
+            border-radius: 50%;
+          }
+        }
+        .cv{
+          height: 30px;
+          width: 40px;
+          font-size: 17px;
+        }
+      }
+      h2{
+        color: $Blue;
+        margin-left: 23px;
+      }  
+    }
+  }
+  @media (max-width: 768px) and (min-width: 701px) {
+    .about {
+      margin: 0;
+      padding: 0; 
+      .about_paragraph{
+        transition:all 1s ease-in-out;
+        cursor: pointer;
+        h2 {
+          color: $Blue;
+          margin-left: 23px;
+        }
+        
+        p{
+          height: 495px;
+          color: $LightGrey;
+          margin: 0;
+          padding: 0 23px;
+          font-size: 14.5px;
+          overflow: hidden;
+          transition:all 1s ease-in-out;
+          & + .fa-caret-right{
+            transform: rotate(-90deg);
+            color: $Blue;
+            margin-left: 100px;
+            font-size: 35px;
+          }
+        }
+        .hidden_paragraph{
+          margin: 0;
+          height: 65px;
+          transition:all 1s ease-in-out;
+          & + .caret_icon{
+            transform: rotate(180deg);
+          }
+        } 
+        
+      }
+      .caret_icon{
+        margin-left: 110px;
+      }
+      .media {
+        padding: 0px;
+        list-style: none;
+        display: flex;
+        width: 210px;
+        margin:0 24px;
+        justify-content: start;
+        border-bottom: 1px solid $Blue;
+        li {
+          margin: 2px;
+        }
+        .linkedin {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: black;
+          height: 40px;
+          width: 50px;
+          border-radius: 50%;
+          .icon {
+            color: $LightGrey;
+            font-size: 25px;
+          }
+        }
+        .github {
+        
+          .icon {
+            color: black;
+            box-shadow: black inset -1px 1px 0px 2px;
+            background-color: #f5f1f0;
+            font-size: 39px;
+            border-radius: 50%;
+          }
+        }
+        .codepen {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: black;
+          height: 40px;
+          width: 50px;
+          border-radius: 50%;
+          .icon {
+            font-size: 26px;
+            color: $LightGrey;
+          }
+        }
+        .upwork {
+          width: 50px;
+          svg {
+            border-radius: 50%;
+          }
+        }
+        .cv{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: black;
+          color: $LightGrey;
+          height: 40px;
+          width: 50px;
+          border-radius: 50%;
+          //font-weight: bold;
+          font-size: 20px;
+        }
+      }
+      h2{
+        color: $Blue;
+        margin-left: 23px;
+      }  
+    }
+  }
+  @media (max-width: 700px) {
+    .about {
+      margin: 0;
+      padding: 0; 
+      .about_paragraph{
+        transition:all 1s ease-in-out;
+        cursor: pointer;
+        h2 {
+          color: $Blue;
+          margin-left: 23px;
+        }
+        
+        p{
+          height: 495px;
+          color: $LightGrey;
+          margin: 0;
+          padding: 0 23px;
+          font-size: 14.5px;
+          overflow: hidden;
+          transition:all 1s ease-in-out;
+          & + .fa-caret-right{
+            transform: rotate(-90deg);
+            color: $Blue;
+            margin-left: 100px;
+            font-size: 35px;
+          }
+        }
+        .hidden_paragraph{
+          margin: 0;
+          height: 65px;
+          transition:all 1s ease-in-out;
+          & + .caret_icon{
+            transform: rotate(180deg);
+          }
+        } 
+        
+      }
+      .caret_icon{
+        margin-left: 100px !important;
+      }
+      .media {
+        width: 170px; 
+        .linkedin {
+        
+          height: 30px;
+          width: 40px;
+          .icon {
+            color: $LightGrey;
+            font-size: 20px;
+          }
+        }
+        .github {
+          .icon {
+            font-size: 30px;
+            border-radius: 50%;
+          }
+        }
+        .codepen {
+          height: 30px;
+          width: 40px;
+          .icon {
+            font-size: 20px;
+          }
+        }
+        .upwork {
+          width: 40px;
+          svg {
+            border-radius: 50%;
+          }
+        }
+        .cv{
+          height: 30px;
+          width: 40px;
+          font-size: 17px;
+        }
+      }
+    }
+  }

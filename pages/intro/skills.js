@@ -31,6 +31,10 @@ export default function Skills() {
       inner_skills: [],
     },
     {
+      name: "REST APIs",
+      inner_skills: [],
+    },
+    {
       name: "Json",
       inner_skills: [],
     },
@@ -98,11 +102,10 @@ export default function Skills() {
   }
   return (
     <Fragment>
-      <h2 className={styles.skills_title}>Skills</h2>
       <ul className={styles.ul_skills_lists}>
+      <h2>Skills</h2>
           {skills_map}
       </ul>
-     
     </Fragment>
   );
 }

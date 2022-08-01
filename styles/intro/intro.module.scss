@@ -7,221 +7,35 @@ $LightGrey: #f5f1f0;
   width: 22%;
   height: 100%;
   background-color: $DarkBlue;
-  header {
-    .title {
-      margin: 30px auto 10px;
-      height: 50px;
-      width: 100%;
-      position: relative;
-      border: 2px solid $Blue;
-
-      .front,
-      .back {
-        position: absolute;
-        text-align: center;
-        left: 50%;
-        margin-left: -100px;
-        top: 50%;
-        margin-top: -14.5px;
-        backface-visibility: hidden;
-        transform-style: preserve-3d;
-        transition: all 1s ease-in-out;
-        h2 {
-          font-size: 20px;
-        }
-      }
-      .front {
-        color: $LightGrey;
-      }
-      .back {
-        color: $Blue;
-        transform: rotatey(180deg);
-      }
-      &:hover {
-        .front {
-          transform: rotatey(180deg);
-        }
-        .back {
-          transform: rotatey(360deg);
-        }
-      }
-    }
-    .control {
-      display: none;
-      cursor: pointer;
-      width: 47px;
-      height: 45px;
-      svg {
-        fill: $Blue;
-      }
-    }
+}
+@media (max-width: 1200px) and (min-width: 993px) {
+  .intro {
+    overflow: hidden;
+    width: 30%;
   }
-
-  .details {
-    margin: 0;
-    padding: 0;
-    .about{
-      transition:all 1s ease-in-out;
-
-     cursor: pointer;
-      h2 {
-        color: $Blue;
-        margin-left: 23px;
-      }
-      
-      p{
-        height: 500px;
-        color: $LightGrey;
-        margin: 0;
-        padding: 0 23px;
-        font-size: 14.5px;
-        overflow: hidden;
-        transition:all 1s ease-in-out;
-        & + .fa-caret-right{
-          transform: rotate(-90deg);
-          color: $Blue;
-          margin-left: 100px;
-          font-size: 35px;
-        }
-      }
-      .hidden_paragraph{
-        margin: 0;
-        height: 65px;
-        transition:all 1s ease-in-out;
-        & + .fa-caret-right{
-          transform: rotate(90deg);
-          color: $Blue;
-          margin-left: 100px;
-          font-size: 35px;
-        }
-      }
-     
-      .media {
-        padding: 0px;
-        list-style: none;
-        display: flex;
-        width: 200px;
-        margin-left: 24px;
-        justify-content: start;
-        border-bottom: 1px solid $Blue;
-        li {
-          margin: 2px;
-        }
-        .linkedin {
-          background-color: black;
-          padding: 6px 8px;
-          border-radius: 50%;
-          i {
-            color: $LightGrey;
-            font-size: 25px;
-          }
-        }
-        .github {
-          i {
-            color: black;
-            box-shadow: black inset -1px 1px 0px 2px;
-            background-color: #f5f1f0;
-            font-size: 39px;
-            border-radius: 50%;
-          }
-        }
-        .codepen {
-          background-color: black;
-          padding: 6px;
-          border-radius: 50%;
-          i {
-            font-size: 26px;
-            color: $LightGrey;
-          }
-        }
-        .upwork {
-          width: 39px;
-          svg {
-            border-radius: 50%;
-          }
-        }
-      }
-    }
+}
+@media (max-width: 992px) and (min-width: 769px) {
+  .intro {
+    width: 100%;
+   // padding: 0 65px;
+    height: 70px;
+    z-index: 999;
+  }
+}
+@media (max-width: 768px) and (min-width: 701px) {
+  .intro {
+    width: 100%;
+    padding: 0 65px;
+    height: 70px;
+    z-index: 999;
     
-    h2{
-      color: $Blue;
-      margin-left: 23px;
-    }
-    .ul_skills_lists {
-      color: $LightGrey; 
-      h2 {
-        color: $Blue;
-        margin-left: -15px;
-      }
-      .skill {       
-        .skill_header{
-          cursor: pointer;
-          i{
-            color: $Blue;
-          }
-          transform: translateX(-15px);
-          h5 {
-            margin-left: 15px;
-            display: inline-block;
-          }
-        }
-        ul{
-          transition: .5s ease-in-out;
-          list-style: none;  
-          height: 0;
-          overflow: hidden;
-          li{}
-        }
-      }
-      .skill_active {
-        &:first-of-type{
-          ul{
-            transition: .5s ease-in-out;
-            display: block;
-            height: 30px;
-            li{
-            
-            }
-         }
-        }
-        .skill_header{ 
-          i{    
-            transform: rotate(90deg);
-          }
-          
-          h5 {
-            
-            display: inline-block;
-          }
-        }
-        ul{
-           display: block;
-           height: 80px;
-           width: 250px;
-        }
-      }
-      .rate {
-        list-style: none;
-        padding: 0;
-        .empty {
-          height: 15px;
-          width: 15px;
-          display: inline-block;
-          border: 1px solid $Blue;
-        }
-        .fill {
-          height: 15px;
-          width: 15px;
-          display: inline-block;
-          border: 1px solid $Blue;
-          background-color: $Blue;
-          box-shadow: -1px -1px 2px 0px $DarkBlue inset;
-        }
-      }
-    }
   }
-  .active_details {
-    display: block;
-   transition: .5s ease-in-out;
+}
+@media (max-width: 700px) {
+  .intro {
+    width: 100%;
+    padding: 0 65px;
+    height: 70px;
+    z-index: 999;
   }
 }
