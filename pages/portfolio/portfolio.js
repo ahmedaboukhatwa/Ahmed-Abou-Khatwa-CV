@@ -13,7 +13,7 @@ export default function Portfolio() {
     {
       name: "Rest Countries Api",
       img: countries_image,
-      demo_link:"https://a-mohammed2001.github.io/REST_Countries_Search_API/",
+      demo_link:"https://rest-api-countries-search.vercel.app/",
       github_link:"https://github.com/a-mohammed2001/REST_Countries_Search_API",
     },
     {
@@ -25,25 +25,25 @@ export default function Portfolio() {
     {
       name: "Am furniture",
       img: furniture_image,
-      demo_link:"https://a-mohammed2001.github.io/Am_Furniture/",
+      demo_link:"https://am-furniture.vercel.app/",
       github_link:"https://github.com/a-mohammed2001/Am_Furniture",
     },
     {
       name: "Quran Sound player",
       img: quran_image,
-      demo_link:"https://a-mohammed2001.github.io/quran_Sound_player/",
+      demo_link:"https://quran-sound-player.vercel.app/",
       github_link:"https://github.com/a-mohammed2001/quran_Sound_player",
     },
     {
       name: "Quiz App",
       img:quiz_image,
-      demo_link:"https://a-mohammed2001.github.io/Quiz_App/",
+      demo_link:"https://quiz-app-delta-two.vercel.app/",
       github_link:"https://github.com/a-mohammed2001/Quiz_App",
     },
     {
       name: "Github Users search",
       img: github_image,
-      demo_link:"https://a-mohammed2001.github.io/GitHub-users-search-app/",
+      demo_link:"https://github-users-search-app.vercel.app/",
       github_link:"https://github.com/a-mohammed2001/GitHub-users-search-app",
     },
   ];
