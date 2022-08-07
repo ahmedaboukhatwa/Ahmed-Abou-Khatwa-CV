@@ -3,7 +3,7 @@ import { Fragment } from 'react';
 import Intro from './intro/intro';
 import Portfolio from './portfolio/portfolio';
 
-export def;\9fsdaault function Home() {
+export default function Home() {
   return (   
     <Fragment>
         <Head>
@@ -14,4 +14,3 @@ export def;\9fsdaault function Home() {
     </Fragment>
   )
 }
-
