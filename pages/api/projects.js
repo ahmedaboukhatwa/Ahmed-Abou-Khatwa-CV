@@ -12,6 +12,12 @@ export const projects = [
       github_link:"https://github.com/a-mohammed2001/Ertugrul_New_Version_Clone_React_Js",
     }, 
     {
+      name: "Zat Blogs",
+      img: '/images/zat-blogs.jpg',
+      demo_link:"https://zat-blogs.vercel.app/",
+      github_link:"https://github.com/a-mohammed2001/zat-blogs",
+    }, 
+    {
       name: "Rest Countries Api",
       img: '/images/rest countries api.jpg',
       demo_link:"https://rest-api-countries-search.vercel.app/",

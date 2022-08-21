@@ -12,7 +12,7 @@ export default function Skills() {
     },
     {
       name: "Css",
-      inner_skills: ["Css3", "Sass", "Bootstrap 4"],
+      inner_skills: ["Css3", "Sass", "Bootstrap 4","Tailwind Css"],
     },
     {
       name: "JavaScript",

@@ -17,22 +17,29 @@ export default function Portfolio() {
       github_link:"https://github.com/a-mohammed2001/Ertugrul_New_Version_Clone_React_Js",
     }, 
     {
+      name: "Zat Blogs",
+      img: '/images/zat-blogs.jpg',
+      demo_link:"https://zat-blogs.vercel.app/",
+      github_link:"https://github.com/a-mohammed2001/zat-blogs",
+    }, 
+    {
       name: "Rest Countries Api",
       img: '/images/rest countries api.jpg',
       demo_link:"https://rest-api-countries-search.vercel.app/",
       github_link:"https://github.com/a-mohammed2001/REST_Countries_Search_API",
+    },
+
+    {
+      name: "Quran Sound player",
+      img: '/images/quran Sound player.png',
+      demo_link:"https://quran-sound-player.vercel.app/",
+      github_link:"https://github.com/a-mohammed2001/quran_Sound_player",
     },
     {
       name: "Am furniture",
       img: '/images/am-furniture.png',
       demo_link:"https://am-furniture.vercel.app/",
       github_link:"https://github.com/a-mohammed2001/Am_Furniture",
-    },
-    {
-      name: "Quran Sound player",
-      img: '/images/quran Sound player.png',
-      demo_link:"https://quran-sound-player.vercel.app/",
-      github_link:"https://github.com/a-mohammed2001/quran_Sound_player",
     },
     {
       name: "Quiz App",
